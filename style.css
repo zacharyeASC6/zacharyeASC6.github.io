@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One|Fascinate|Geostar|Quicksand|Raleway&display=swap');
+body{
+    background-image: url("http://www.textures4photoshop.com/tex/thumbs/matrix-code-animation-gif-free-animated-background-716.gif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:0;
+}
+
+.top_screen{
+    text-align: center;
+    background: chartreuse;
+    color: gold;
+    font-family: "Russo One";
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: darkslategray;
+}
+.top_screen header{
+    font-size: 90px;
+}
+.top_screen h1{
+    font-size: 35px;
+    -webkit-text-stroke-width: 1px;
+}
+.universal_styling{
+    color: ghostwhite;
+}
