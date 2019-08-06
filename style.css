@@ -2,9 +2,7 @@
 body{
     background-image: url("http://www.textures4photoshop.com/tex/thumbs/matrix-code-animation-gif-free-animated-background-716.gif");
     background-attachment: fixed;
-    background-repeat: no-repeat;
     background-size: 100%;
-
     margin:0;
 }
 
@@ -28,8 +26,8 @@ body{
     color: gold;
 }
 .about{
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
@@ -38,12 +36,13 @@ body{
 }
 .about p{
     font-family: "Raleway";
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 5px;
 }
-.about h1{
+.about > h1{
     font-family: "Quicksand";
     margin-top: 10px;
+    font-size: 60px;
 }
 #headshot_image{
     float: left;
@@ -55,41 +54,88 @@ body{
 
 .skills{
     background-color: darkolivegreen;
-    display:flex;
-    flex-flow:column wrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    display:grid;
+    grid-template-areas: 
+    "header header"
+    "main sidebar";
+    grid-template-columns: 50% 50%;
     font-family: "Raleway";
-    margin-bottom: 90px;
+    margin-bottom: 150px;
     margin-left:10px;
     margin-right: 10px;
+    font-size: 35px;
 }
 .skills > h1{
     font-family: "Quicksand";
+    grid-area: header;
+    justify-self: center;
+}
+.skills > ul{
+    grid-area: main;
 }
 .images{
-    display:flex;
     padding-left: 0;
-    justify-content: flex-end;
-    flex-direction: row;
 }
 
 .images img{
-    width: 15%;
-    height:15%;
+    width: 30%;
+    height:30%;
     margin:0;
+    grid-area: sidebar;
+    justify-self: center;
 }
 .portfolio{
     font-family:"Raleway";
     background-color: seagreen;
-    
     margin-left:10px;
     margin-right:10px;
+    font-size: 25px;
+}
+.portfolio > h1{
+    font-size: 60px;
+    font-family: "Quicksand";
+}
+#links{
+    display:grid;
+    grid-area:header;
+    grid-template-areas: 
+    "main1 main2 main3"
+    "header header header";
+    
+ }
+#links a{
+    justify-self: center;
+}
+#links img{
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+}
+#bouncyBall{
+    grid-area: main3;
+}
+#mash{
+    grid-area: main2;
+}
+#links #mashImg{
+    width: 500px;
+}
+#pokemon{
+    grid-area: main1;
 }
 .socials{
     font-family:"Raleway";
     background-color: darkseagreen;
-    margin-top:90px;
+    margin-top:150px;
     margin-left:10px;
     margin-right:10px;
+    font-size: 30px;
+}
+#linkedinCircle {
+    width: 150px;
+    height: 150px;
+}
+#twitter{
+    width: 175px;
+    height: 175px;
 }
