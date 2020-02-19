@@ -96,32 +96,51 @@ body{
     font-family: "Quicksand";
 }
 #links{
-    display:grid;
-    grid-area:header;
+    display: grid;
     grid-template-areas: 
-    "main1 main2 main3"
-    "header header header";
+    "main1 main2 main3 main4 main5"
+    "header1 header2 header3 header4 header5";
+    grid-template-columns: repeat(5, minmax(250px, 1fr) );
     
  }
 #links a{
     justify-self: center;
 }
 #links img{
-    justify-self: center;
     width: 250px;
     height: 250px;
+    
 }
 #bouncyBall{
+    justify-self: center;
     grid-area: main3;
 }
 #mash{
     grid-area: main2;
 }
 #links #mashImg{
-    width: 500px;
+    grid-area: header2;
+}
+#alphaImg{
+    grid-area: header5;
+}
+#mazelessImg{
+    grid-area: header4;
+}
+#ballImg{
+    grid-area: header3;
+}
+#pokeImg{
+    grid-area: header1;
 }
 #pokemon{
     grid-area: main1;
+}
+#mazeless_runner{
+    grid-area: main4;
+}
+#alphaplaylist{
+    grid-area: main5;
 }
 .socials{
     font-family:"Raleway";
@@ -138,4 +157,8 @@ body{
 #twitter{
     width: 175px;
     height: 175px;
+}
+#instagram{
+    width: 150px;
+    height:150px;
 }
