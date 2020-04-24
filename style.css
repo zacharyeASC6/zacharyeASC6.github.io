@@ -98,10 +98,10 @@ body{
 #links{
     display: grid;
     grid-template-areas: 
-    "main1 main2 main3 main4 main5"
-    "header1 header2 header3 header4 header5";
-    grid-template-columns: repeat(5, minmax(250px, 1fr) );
-    
+    "main1 main2 main4 main5"
+    "header1 header2 header4 header5";
+    grid-template-columns: repeat(4, minmax(250px, 1fr) );
+    margin:auto;
  }
 #links a{
     justify-self: center;
@@ -109,26 +109,20 @@ body{
 #links img{
     width: 250px;
     height: 250px;
-    
-}
-#bouncyBall{
     justify-self: center;
-    grid-area: main3;
 }
 #mash{
     grid-area: main2;
 }
-#links #mashImg{
+#mashImg{
     grid-area: header2;
 }
 #alphaImg{
     grid-area: header5;
+    border-radius: 22px;
 }
 #mazelessImg{
     grid-area: header4;
-}
-#ballImg{
-    grid-area: header3;
 }
 #pokeImg{
     grid-area: header1;
